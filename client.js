@@ -18,11 +18,6 @@ const connect = function() {
     console.log("Successfully connected to game server");
     conn.write("Name: SN");
   });
-
-  conn.on('connect', () => {
-    //setInterval(() => conn.write("Move: up"), 1000);
-  });
-
   return conn;
 };
 
